@@ -1,11 +1,14 @@
 
 import './App.css'
+import { Button } from './component/common/button'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-2xl text-center text-red-500 font-bold'>Hellow World</h1>
+      <main className='font-onest'>
+        <h1>Hellow world</h1>
+      </main>
     </>
   )
 }
