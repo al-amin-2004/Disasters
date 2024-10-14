@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <main className='font-onest'>
-        <h1>Hellow world</h1>
+        <Button>Cypher AI</Button>
       </main>
     </>
   )
