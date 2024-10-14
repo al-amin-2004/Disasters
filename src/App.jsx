@@ -5,9 +5,10 @@ function App() {
 
   return (
     <>
-      <h1>Hellow World</h1>
+      <h1 className='text-2xl text-center text-red-500 font-bold'>Hellow World</h1>
     </>
   )
 }
 
 export default App
+
