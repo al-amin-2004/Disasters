@@ -13,6 +13,10 @@ export default {
       },
       fontFamily: {
         "onest": ['"Onest"' , "sans-serif"],
+        "bebasNeue": ['"Bebas Neue"' , "sans-serif"],
+      },
+      boxShadow: {
+        chatBtn: "0px 4px 25px rgba(0,0,0,0.3)",
       },
     },
   },

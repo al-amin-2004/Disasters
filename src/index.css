@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.openNav {
+    @apply bg-white text-center text-base gap-0 flex fixed top-0 left-0 flex-col w-full h-screen justify-start z-50 py-7;
+}

@@ -1,9 +1,17 @@
-import { FaBell } from "react-icons/fa";
+import { FaBars, FaBell, FaTimes } from "react-icons/fa";
 import { Container } from "../common/container";
 import { navItems } from "../db";
 import { NavLink, Outlet } from "react-router-dom";
+import { useState } from "react";
 
 export const Navbar = () => {
+
+    const [openNav, setOpenNav] = useState(false);
+
+    const handleNavbar = () => {
+        setOpenNav(!openNav)
+    }
+
     return(
         <>
         <nav className="pt-[23px] pb-[18px] bg-[#E4E4E7] border border-b-[#d3d3d3]">
@@ -11,10 +19,14 @@ export const Navbar = () => {
                 <img src="img/logo.png" alt="Logo" />
 
                 <menu>
-                    <ul className="flex items-center gap-[35px] text-accent text-sm leading-[18px]">
+                    <ul className={` hidden md:flex items-center gap-[25px] lg:gap-[35px] text-accent text-sm leading-[18px] ${openNav && "openNav"}`}>
+
+                        {openNav && <FaTimes onClick={handleNavbar} className="text-lg me-5 mb-5 self-end cursor-pointer"/>}
+                        
                         {navItems.map(({label, linkTo}, i) => (
-                            <NavLink to={linkTo} key={i}> <li className="cursor-pointer">{label}</li> </NavLink>
+                            <NavLink to={linkTo} key={i} className={`hover:scale-105 hover:text-primary hover:font-semibold transition-all duration-200 cursor-pointer ${openNav && "w-full py-3 border border-b-secondary"}`}> <li>{label}</li> </NavLink>
                         ))}
+
                     </ul>
                 </menu>
 
@@ -29,9 +41,13 @@ export const Navbar = () => {
                         <img src="img/user.png" alt="User Image" className="cursor-pointer"/>
                     </div>
 
-                    <div className="text-accent ">
+                    <div className="text-accent hidden lg:block">
                         <h3 className="text-base font-semibold leading-5">Usman Zafar</h3>
                         <p className="text-sm leading-[18px]">usmanzafar@gmail.com</p>
+                    </div>
+
+                    <div className="text-accent ">
+                        <FaBars className="md:hidden text-xl cursor-pointer" onClick={handleNavbar}/>
                     </div>
                 </div>
             </Container>
