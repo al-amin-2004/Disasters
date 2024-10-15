@@ -1,11 +1,12 @@
 import { FaBell } from "react-icons/fa";
 import { Container } from "../common/container";
 import { navItems } from "../db";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 export const Navbar = () => {
     return(
-        <nav className="pt-[23px] pb-[18px] bg-[#E4E4E7]">
+        <>
+        <nav className="pt-[23px] pb-[18px] bg-[#E4E4E7] border border-b-[#d3d3d3]">
             <Container className="flex justify-between items-center">
                 <img src="img/logo.png" alt="Logo" />
 
@@ -35,5 +36,8 @@ export const Navbar = () => {
                 </div>
             </Container>
         </nav>
+
+        <Outlet/>
+        </>
     )
 }

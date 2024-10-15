@@ -1,11 +1,11 @@
 import { FaCloudShowersHeavy } from "react-icons/fa";
 
-export const Cards = () => {
+export const Cards = ({img, weather, title, location, price}) => {
     return(
         <div className="max-w-[306px] space-y-5">
             <div className="relative">
-                <img src="img/card-1.png" alt="" />
-                <div className="flex items-center gap-1.5 p-2.5 rounded-full bg-[#fafafa] absolute top-2.5 right-2.5">
+                <img src={img} alt="" />
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#fafafa] absolute top-2.5 right-2.5">
                     <FaCloudShowersHeavy />
                     <p className="font-bold text-xs leading-[30px] text-[#18181B]">Blizzard</p>
                 </div>
