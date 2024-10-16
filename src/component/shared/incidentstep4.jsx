@@ -9,7 +9,7 @@ import { twMerge } from "tailwind-merge";
 
 
 
-export const IncidentStep3 = () => {
+export const IncidentStep4 = () => {
 
     const [active, setActive] = useState()
 
@@ -28,7 +28,7 @@ export const IncidentStep3 = () => {
                 </div>
 
                 <div>
-                    <ProgressComponent value="25" className="hidden lg:block"/>
+                    <ProgressComponent value="50" className="hidden lg:block"/>
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center gap-1.5 md:gap-3.5 text-accent w-full md:w-auto">
@@ -39,16 +39,16 @@ export const IncidentStep3 = () => {
         </section>
 
         <section className="py-14">
-            <Container className="max-w-[769px] space-y-[25px]">
-                <SectionTitle className="text-2xl">Which of these best describes the incident?</SectionTitle>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center gap-[11px]">
-                    {step3.map(({img, title}, i) => (
-                        <div key={i} className={twMerge("w-full md:w-[180px] h-[69px] py-[22px] px-5 rounded-md bg-[#F4F4F5] border border-[#E4E4E7] flex items-center gap-2.5 text-accent cursor-pointer", active == i && "bg-primary text-white")} onClick={() => setActive(i)}>
-                            <img src={img} className="fill-primary"/>
-                            <p className="text-sm leading-[18px]">{title}</p>
-                        </div>
-                    ))}
+            <Container className="space-y-[25px]">
+                <div>
+                    <SectionTitle>Let’s give the incident a title?</SectionTitle>
+                    <p className="text-sm text-accent leading-[22px] mb-6 mt-3">Make a title that will easily identify the incidents</p>
+                    <input type="text" placeholder="Add title here" className="w-full py-3 px-2.5 bg-[#f4f4f5] rounded-md border border-[#e4e4e7] outline-none"/>
+                </div>
+                <div>
+                    <SectionTitle>Describe what happened during the incident?</SectionTitle>
+                    <p className="text-sm text-accent leading-[22px] mb-6 mt-3">Share some information about the incident. The when, where, how.</p>
+                    <textarea rows="5" placeholder="Type here" className="w-full py-3 px-2.5 bg-[#f4f4f5] rounded-md border border-[#e4e4e7] outline-none resize-none"></textarea>
                 </div>
             </Container>
         </section>
