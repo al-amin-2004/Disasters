@@ -3,18 +3,10 @@ import { Button } from "../common/button";
 import { SectionTitle } from "../common/section-title";
 import { RxCross2 } from "react-icons/rx";
 import { ProgressComponent } from "../common/progress";
-import { step3 } from "../db";
-import { useState } from "react";
-import { twMerge } from "tailwind-merge";
 
 
 
 export const IncidentStep4 = () => {
-
-    const [active, setActive] = useState()
-
-
-
     return(
         <>
         <section className="bg-[#E4E4E7] py-[29px]">
