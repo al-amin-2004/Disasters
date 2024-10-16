@@ -24,7 +24,7 @@ export const Navbar = () => {
                         {openNav && <FaTimes onClick={handleNavbar} className="text-lg me-5 mb-5 self-end cursor-pointer"/>}
                         
                         {navItems.map(({label, linkTo}, i) => (
-                            <NavLink to={linkTo} key={i} className={`hover:scale-105 hover:text-primary hover:font-semibold transition-all duration-200 cursor-pointer ${openNav && "w-full py-3 border border-b-secondary"}`}> <li>{label}</li> </NavLink>
+                            <NavLink to={linkTo} key={i} className={`hover:text-primary hover:font-semibold transition-all duration-200 cursor-pointer ${openNav && "w-full py-3 border border-b-secondary"}`}> <li>{label}</li> </NavLink>
                         ))}
 
                     </ul>

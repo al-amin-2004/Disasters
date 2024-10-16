@@ -1,19 +1,20 @@
-import { Container } from "../../common/container";
-import { SectionTitle } from "../../common/section-title";
-import { Button } from "../../common/button";
+import { Container } from "../common/container";
+import { SectionTitle } from "../common/section-title";
+import { Button } from "../common/button";
 import { IoSearch } from "react-icons/io5";
-import { Cards } from "../../shared/cards";
-import { cardDatas } from "../../db";
-import { ChatBox } from "../../shared/chatbox";
+import { Cards } from "../shared/cards";
+import { cardDatas } from "../db/index";
+import { FaPlus } from "react-icons/fa";
 
-export const Home = () => {
+
+export const Incident = () => {
     return(
         <>
         <section className="bg-[#E4E4E7] py-[29px]">
             <Container className="flex flex-col md:flex-row justify-between items-center gap-3">
                 <div className="space-y-[6px]">
-                    <p className="text-xs text-center text-accent md:text-start">Welcome Back</p>
-                    <SectionTitle>Dashboard</SectionTitle>
+                    <p className="text-xs text-center text-accent md:text-start">Home - Incidents</p>
+                    <SectionTitle>Incidents</SectionTitle>
                 </div>
 
                 <div className="flex flex-col md:flex-row items-center gap-1.5 md:gap-3.5 text-accent">
@@ -24,7 +25,7 @@ export const Home = () => {
                     <div className="w-full flex gap-[5px] bg-white py-3 px-2.5 rounded-md border border-[#d3d3d3] cursor-pointer">
                         <input type="date" className="text-xs w-full"/>
                     </div>
-                    <Button className="w-full">Cypher AI</Button>
+                    <Button className="w-full flex gap-[5px] items-center"><FaPlus className="text-base"/>New Incident</Button>
                 </div>
             </Container>
         </section>
@@ -35,7 +36,6 @@ export const Home = () => {
                     <Cards key={i} {...cardData}/>
                 ))}
             </Container>
-            <ChatBox/>
         </section>
         </>
     )
