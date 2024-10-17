@@ -7,7 +7,7 @@ import { step2 } from "../db/index"
 export const IncidentStep2 = () => {
     return(
         <>
-        <section className="flex justify-center items-center py-10 md:h-screen">
+        <section className="py-10">
             <Container>
                 <div className="space-y-[33px]">
                     <div className="space-y-[14px] text-center">
