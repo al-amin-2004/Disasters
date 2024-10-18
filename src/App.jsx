@@ -4,6 +4,7 @@ import { Navbar } from './component/shared/navbar';
 import { Home } from "./component/pages/home/home"
 import { Incidents } from './component/pages/incidents/incidents';
 import { Error } from './component/shared/error';
+import { Location } from './component/pages/locations/locations';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
             <Route path='' element={<Navbar/>}>
               <Route path='/' element={<Home/>}/>
               <Route path='/incidents' element={<Incidents/>}/>
+              <Route path='/locations' element={<Location/>}/>
               <Route path='*' element={<Error/>}/>
             </Route>
 

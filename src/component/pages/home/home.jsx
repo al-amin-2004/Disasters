@@ -5,6 +5,7 @@ import { IoSearch } from "react-icons/io5";
 import { Cards } from "../../shared/cards";
 import { cardDatas } from "../../db";
 import { ChatBox } from "../../shared/chatbox";
+import { Chatbot } from "../../shared/chatbot";
 
 export const Home = () => {
     return(
@@ -22,7 +23,7 @@ export const Home = () => {
                         <input type="text" placeholder="Search incident" className="text-xs border-none outline-none"/>
                     </div>
                     <div className="w-full flex gap-[5px] bg-white py-3 px-2.5 rounded-md border border-[#d3d3d3] cursor-pointer">
-                        <input type="date" className="text-xs w-full"/>
+                        <input type="date" className="text-xs border-none outline-none w-full"/>
                     </div>
                     <Button className="w-full">Cypher AI</Button>
                 </div>
@@ -36,6 +37,7 @@ export const Home = () => {
                 ))}
             </Container>
             <ChatBox/>
+            <Chatbot/>
         </section>
         </>
     )

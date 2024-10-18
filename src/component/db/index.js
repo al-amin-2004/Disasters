@@ -181,3 +181,42 @@ export const step3 = [
         title: "Wildfire",
     },
 ]
+
+
+
+
+
+export const locationCards = [
+    {
+        img: "img/building-1.png",
+        weather: "Building",
+        title: "Whitechapel Rd.",
+        location: "Tulare County,  Los Angles, CA 23415",
+        price: "$1,456,654.00",
+
+    },
+    {
+        img: "img/building-2.png",
+        weather: "Building",
+        title: "Whitechapel Rd.",
+        location: "Tulare County,  Los Angles, CA 23415",
+        price: "$1,456,654.00",
+
+    },
+    {
+        img: "img/building-1.png",
+        weather: "Building",
+        title: "Whitechapel Rd.",
+        location: "Tulare County,  Los Angles, CA 23415",
+        price: "$1,456,654.00",
+
+    },
+    {
+        img: "img/building-1.png",
+        weather: "Building",
+        title: "Whitechapel Rd.",
+        location: "Tulare County,  Los Angles, CA 23415",
+        price: "$1,456,654.00",
+
+    },
+]
