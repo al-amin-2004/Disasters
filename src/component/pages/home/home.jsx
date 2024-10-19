@@ -5,7 +5,7 @@ import { IoSearch } from "react-icons/io5";
 import { Cards } from "../../shared/cards";
 import { cardDatas } from "../../db";
 import { ChatBox } from "../../shared/chatbox";
-import { Chatbot } from "../../shared/chatbot";
+
 
 export const Home = () => {
     return(
@@ -37,7 +37,6 @@ export const Home = () => {
                 ))}
             </Container>
             <ChatBox/>
-            <Chatbot/>
         </section>
         </>
     )

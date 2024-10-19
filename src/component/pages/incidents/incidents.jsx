@@ -80,7 +80,7 @@ export const Incidents = () => {
                 ) : (
                     <div className="flex flex-col sm:flex-row items-center gap-1.5 md:gap-3.5 text-accent w-full md:w-auto">
                         <Button className="px-10 text-accent bg-[#FAFAFA] border border-[#d4d4d8] w-full" onClick={() => setStep(step - 1)}>Back</Button>
-                        <span><Button className="w-full text-nowrap" onClick={handleStep}>{step == 5 ? "Finished" : "Next step"}</Button></span>
+                        <Button className="w-full text-nowrap" onClick={handleStep}>{step == 5 ? "Finished" : "Next step"}</Button>
                     </div>
                 )}
             </Container>

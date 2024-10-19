@@ -16,5 +16,7 @@
     left: 0;
 }
 
-
+.chatScrollbar-hide::-webkit-scrollbar {
+    width: 0px;
+}
 
