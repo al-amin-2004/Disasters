@@ -4,7 +4,7 @@ import { SectionTitle } from "../common/section-title";
 import { step2 } from "../db/index"
 
 
-export const IncidentStep2 = () => {
+export const IncidentStep2 = ({handleStep}) => {
     return(
         <>
         <section className="py-10">
@@ -37,7 +37,7 @@ export const IncidentStep2 = () => {
                     </div>
 
                     <div className="text-center">
-                        <Button>Get started</Button>
+                        <Button onClick={handleStep}>Get started</Button>
                     </div>
                 </div>
             </Container>
@@ -45,4 +45,6 @@ export const IncidentStep2 = () => {
         </>
     )
 }
+
+
 

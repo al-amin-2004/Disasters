@@ -14,14 +14,14 @@ import { RxCross2 } from "react-icons/rx";
 import { twMerge } from "tailwind-merge";
 
 
-const ShowStep = ({step}) => {
+const ShowStep = ({step, handleStep}) => {
 
     switch (step) {
     case 1:
         return <Incident/>
     break;
     case 2:
-        return <IncidentStep2/>
+        return <IncidentStep2 handleStep={handleStep}/>
     break;
     case 3:
         return <IncidentStep3/>
@@ -37,7 +37,7 @@ const ShowStep = ({step}) => {
 
 export const Incidents = () => {
 
-    const [step, setStep] = useState(3);
+    const [step, setStep] = useState(1);
     
     const handleStep = () => {
         setStep(step + 1)
@@ -87,7 +87,7 @@ export const Incidents = () => {
         </section>
 
 
-        <ShowStep step={step}/>
+        <ShowStep step={step} handleStep={handleStep}/>
         </>
     )
 }

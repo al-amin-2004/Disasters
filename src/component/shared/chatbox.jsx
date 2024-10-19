@@ -11,7 +11,7 @@ import { twMerge } from "tailwind-merge";
 export const ChatBox = () => {
 
     const chatstyle = {
-        maxWidth: "213px",
+        maxWidth: "72%",
         fontSize: "12px",
         lineHeight: "19px",
         padding: "12px",
