@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Navbar } from './component/shared/navbar';
-import { Home } from "./component/pages/home/home"
-import { Incidents } from './component/pages/incidents/incidents';
+import { Home } from "./component/pages/home"
+import { Incidents } from './component/pages/incidents';
 import { Error } from './component/shared/error';
-import { Location } from './component/pages/locations/locations';
+import { Location } from './component/pages/locations';
 
 function App() {
 
