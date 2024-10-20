@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom"
-import { Button } from "../common/button"
-import { Container } from "../common/container"
-import { SectionTitle } from "../common/section-title"
+import { Link } from "react-router-dom";
+import { Button } from "../common/button";
+import { Container } from "../common/container";
+import { SectionTitle } from "../common/section-title";
 
 export const Error = () => {
     return(

@@ -1,10 +1,10 @@
-import { Button } from "../../common/button";
-import { Container } from "../../common/container";
-import { SectionTitle } from "../../common/section-title";
+import { Button } from "../common/button";
+import { Container } from "../common/container";
+import { SectionTitle } from "../common/section-title";
 import { IoSearch } from "react-icons/io5";
 import { TiLocation } from "react-icons/ti";
-import { Cards } from "../../shared/cards";
-import { locationCards } from "../../db";
+import { Cards } from "../shared/cards";
+import { locationCards } from "../db";
 
 export const Location = () => {
     return(

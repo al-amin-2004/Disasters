@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { Incident } from "../../shared/incident";
-import { IncidentStep2 } from "../../shared/incidentstep2";
-import { IncidentStep3 } from "../../shared/incidentstep3";
-import { IncidentStep4 } from "../../shared/incidentstep4";
-import { IncidentStep5 } from "../../shared/incidentstep5";
-import { SectionTitle } from "../../common/section-title";
-import { Button } from "../../common/button";
+import { Incident } from "../shared/incident";
+import { IncidentStep2 } from "../shared/incidentstep2";
+import { IncidentStep3 } from "../shared/incidentstep3";
+import { IncidentStep4 } from "../shared/incidentstep4";
+import { IncidentStep5 } from "../shared/incidentstep5";
+import { SectionTitle } from "../common/section-title";
+import { Button } from "../common/button";
 import { IoSearch } from "react-icons/io5";
 import { FaPlus } from "react-icons/fa";
-import { Container } from "../../common/container";
-import { ProgressComponent } from "../../common/progress";
+import { Container } from "../common/container";
+import { ProgressComponent } from "../common/progress";
 import { RxCross2 } from "react-icons/rx";
 import { twMerge } from "tailwind-merge";
 

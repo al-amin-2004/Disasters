@@ -2,8 +2,7 @@ import { Button } from "../common/button";
 import { BsCamera } from "react-icons/bs";
 import { SlPicture } from "react-icons/sl";
 import { GoPaperclip } from "react-icons/go";
-
-import { useState } from "react"
+import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { twMerge } from "tailwind-merge";
 

@@ -1,6 +1,6 @@
 
-import { LineProgress, LineProgressBar } from 'keep-react'
-import { twMerge } from 'tailwind-merge'
+import { LineProgress, LineProgressBar } from 'keep-react';
+import { twMerge } from 'tailwind-merge';
 
 export const ProgressComponent = ({value, className}) => {
   return (

@@ -1,10 +1,10 @@
-import { Container } from "../../common/container";
-import { SectionTitle } from "../../common/section-title";
-import { Button } from "../../common/button";
+import { Container } from "../common/container";
+import { SectionTitle } from "../common/section-title";
+import { Button } from "../common/button";
 import { IoSearch } from "react-icons/io5";
-import { Cards } from "../../shared/cards";
-import { cardDatas } from "../../db";
-import { ChatBox } from "../../shared/chatbox";
+import { Cards } from "../shared/cards";
+import { cardDatas } from "../db";
+import { ChatBox } from "../shared/chatbox";
 
 
 export const Home = () => {
